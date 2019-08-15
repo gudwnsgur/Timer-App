@@ -1,5 +1,6 @@
 import React, { Compoenet } from "react";
 import { View, Text, StyleSheet, StatusBar } from "react-native";
+import Button from '../Button';
 
 class Time extends Compoenet {
     render() {
@@ -10,7 +11,8 @@ class Time extends Compoenet {
                     <Text style={styles.time}> 25:00 </Text>
                 </View>   
                 <View style={styles.lower}>
-                    <Text> BUTTONS HERE </Text>    
+                    <Button iconName="play-circle" onPress={() => alert("it works!")}/>    
+                    <Button iconName="stop-circle" onPress={() => alert("it works!")}/>
                 </View>   
             </View>
         );
