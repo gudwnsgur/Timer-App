@@ -43,6 +43,8 @@ function reducer(state= initialState, action){
             return applyRestartTimer(state, action);
         case ADD_SECOND:
             return applyAddSecond(state);
+        default:
+            return state;
     }
 }
 
@@ -87,5 +89,5 @@ const actionCreators = {
 
 // Export Reducer
 
-
+export { actionCreators };
 export default reducer;
